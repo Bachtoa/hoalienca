@@ -1,0 +1,453 @@
+/* Media queries */
+ 
+@media screen {
+    section {
+        width: auto;
+        float: none;
+    }
+    aside {
+        display: none;
+    }
+}
+@media screen and (min-width: 400px) {
+    section {
+        width: auto;
+        float: none;
+    }
+    aside {
+        width: auto;
+        height: 200px;
+        float: none;
+        display: block;
+    }
+ 
+}
+ 
+@media screen and (min-width: 800px) {
+    section {
+        width: 78%;
+        float: left;
+    }
+    aside {
+        width: 20%;
+        height: 300px;
+        float: right;
+        display: block;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+
+}
+
+.header .nav{
+    height: 46.5px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.nav .nav_items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav_items .nav_item{
+    position: relative;
+}
+.nav_item >a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+.nav_items .nav_item:hover {
+    background-color: #ccc;
+}
+
+.nav_item .nav_item >a:hover {
+    color: #ccc;
+}
+
+.nav_items .nav_item:hover .sub-menu{
+    display: block;
+}
+.nav_item .sub-menu{
+    width: 160px;
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.sub-menu .sub-menu_item{
+    line-height: 1.5;
+    padding: 8px 16px;
+}
+
+.sub-menu .sub-menu_item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.sub-menu .sub-menu_item:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.nav .search-button {
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+.nav .search-button:hover{
+    background-color: red;
+}
+
+.banner {
+    padding-top: 50%;
+    background-color: #585555;
+    background-image: url("/images/about.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner .text-banner {
+    position: top;
+    bottom: 46px;
+    color:rgb(106, 16, 16);
+    width: 100%;
+}
+.text-heading {
+    font-weight: 500px;
+    font-size: 42px;
+}
+.text-dcr {
+    margin-top: 25px;
+    font-size: 20px;
+}
+.about .about__content {
+    text-align: justify;
+}
+
+
+
+ .main .about__title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+.main.about_desc{
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+    .main .about {
+        max-width: 800px;
+        padding: 32px 16px;
+        text-align: center;
+        margin: auto;
+    }
+    .about .members {
+        display: flex;
+        padding: 34px;
+    }
+    .main .events {
+        max-width: 800px;
+        padding: 32px 16px;
+        text-align: center;
+        margin: auto;}
+    .events .members {
+        display: flex;
+        padding: 34px;}
+    .member > img {
+        width: 60%;
+        border-radius: 4px;
+    }
+    .member > p{
+        margin: 15px;
+    }
+    .contact .contact{
+        padding: 64px 16px;
+        max-width: 800px;
+    }
+    .main .services {
+        height: 800px;
+        width: 100%;
+        background-color:rgb(8, 62, 62);
+        padding-top: 64px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .main .services .heading {
+        text-align: center;
+        letter-spacing: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    .main .services .sub {
+        text-align: center;
+        opacity: 0.60; 
+    }
+    .waitlist {
+        color: #333131;
+        width: 700px;
+        background-color: #fff;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .waitlist li {
+        font-size: 15px;
+        padding: 10.5px 16px;
+        border-bottom: 1px solid #ddd;
+        list-style-type: none;
+    }
+
+    .waitlist li .Sold-out {
+        background-color: #ee1000;
+        color: #fff;
+        padding: 3px 4px;
+        margin-left: 16px;
+
+    }
+
+    .waitlist .quantity {
+        float: right;
+        width: 24px;
+        height: 24px;
+        background-color: #262323;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+        margin-top: -3px;
+
+    }
+    .services .service {
+        width: 716px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 48px;
+    }
+    .services .service-item {
+        float: left;
+        width: 33.33333%;
+        padding: 0 8px;
+    }
+    .services .service-img{
+        width: 100%;
+        display: block;
+    }
+    .services .service-img:hover {
+        opacity: 0.6;
+    }
+    .services .service-body{
+        padding: 16px;
+        font-size: 15px;
+        background-color: #fff;
+    }
+    .service-heading{
+        font-size: 15px;
+        font-weight: 550;
+    }
+    .service-time{
+        margin-top: 15px;
+        color:rgb(0, 0, 59);
+        line-height: 1.4;
+
+    }
+    .service-desc{
+        margin-top: 15px;
+    }
+    .service-btn{
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 11px 16px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .service-btn:hover{
+        color: #000;
+        background-color: #ccc;
+    }
+    .text-white{
+        color: #fff; 
+    }
+    
+.main .contact {
+    padding: 64px 16px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.main .commission__title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main .commission__desc {
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+.contact > div {
+    display: flex;
+    text-align: start;
+    padding: 32px 0;
+}
+.contact > div > * {
+    flex: 1;
+}
+.contact .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contact__form > div {
+    display: flex;
+}
+.contact__form input[type=text] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contact__form input[type=submit] {
+    padding: 8px 16px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: fit-content;
+}
+
+.pull-right {
+    float: right !important
+}
+.row {
+    margin-left: -8px;
+    margin-right: 8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+}
+.col-half{
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+.contact-content {
+    margin-top: 48px; 
+}
+.contact {
+    padding: 64px 16px;
+    margin: auto;
+    text-align: center;
+}
+.about__title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.about__desc {
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+.contact > div {
+    display: flex;
+    text-align: start;
+    padding: 32px 0;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+.contact > div > * {
+    flex: 1;
+}
+.contact__form > div {
+    display: flex;
+}
+.contact__form input[type=text] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contact__form input[type=submit] {
+    padding: 8px 16px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: fit-content;
+}
+.contact__form > div :first-child {
+    margin-right: 10px;
+}
+.contact__form input[type=submit]:hover {
+    opacity: 0.6;
+}
+.social-link {
+    padding-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    font-size: 24px;
+    color: #757575;
+}
+.copy {
+    padding-bottom: 64px;
+    padding-top: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.social-link a {
+    color: rgba(0, 0, 0, 0.6);
+}
+.social-link a:hover {
+    opacity: 0.4;
+}
+.copy a {
+    color: rgba(0, 0, 0, 0.6);
+}
+.copy a:hover{
+    opacity: 0.4;
+}
+
